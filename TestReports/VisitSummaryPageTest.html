@@ -1,0 +1,2350 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>intelehealth - WebApplication - Automation -TestExecution results</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>intelehealth - WebApplication - Automation -TestExecution results</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Oct 10, 2024 05:02:05 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>intelehealthWebAppRegressionTestSuite</a></li>
+					<li><a href='#'>VisitSummaryPageTest</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='7.175%'><span class='strong'>16</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='92.825%'>207</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1805_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:02:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:02:32 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:02:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+218ms</span>
+</div>
+	<div class='test-desc'>IDA4_1805_VisitSummary_Verify the visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:32 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:38 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:41 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:41 PM</td>
+					<td class='step-details'>Age section is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:41 PM</td>
+					<td class='step-details'>Address section is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:41 PM</td>
+					<td class='step-details'>Occupation section is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:41 PM</td>
+					<td class='step-details'>National ID section is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:42 PM</td>
+					<td class='step-details'>Contact Number section is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:02:42 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728559962314.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728559962314.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728559962314.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:46 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:46 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:47 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:02:47 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1806_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:03:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:03:07 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:03:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+301ms</span>
+</div>
+	<div class='test-desc'>IDA4_1806_VisitSummary_Verify Appointment Starts in section under visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:07 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:13 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:16 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:19 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:20 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <td _ngcontent-jyx-c240="" role="cell" mat-cell="" class="mat-cell cdk-cell cdk-column-name mat-column-name ng-star-inserted" tabindex="0" data-test-id="apPatient0">...</td> is not clickable at point (497, 290). Other element would receive the click: <div _ngcontent-jyx-c15="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c5d6c807b86c414261daa4b123dc8db, clickElement {id=f.938CCF317D14F04AAFE24054D8CDFE6C.d.CC8A1FEFD82EE5D41EF1480F23DCDA2D.e.5413}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62799/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5c5d6c807b86c414261daa4b123dc8db)] -> xpath: //td[@data-test-id='apPatient0']]
+Session ID: 5c5d6c807b86c414261daa4b123dc8db</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:20 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:21 PM</td>
+					<td class='step-details'>Clicked on first patient from Appointment table</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:03:21 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560001454.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560001454.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560001454.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:27 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:27 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:27 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:28 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1807_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:03:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:03:48 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:04:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+754ms</span>
+</div>
+	<div class='test-desc'>IDA4_1807_VisitSummary_Verify the functionality of Start call button in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:48 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:53 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:03:56 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:00 PM</td>
+					<td class='step-details'>Call button from Visit summary page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:04:01 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560041269.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560041269.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560041269.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:05 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:05 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:05 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:06 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1809_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:04:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:04:26 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:04:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+336ms</span>
+</div>
+	<div class='test-desc'>IDA4_1809_VisitSummary_Verify chat option in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:26 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:31 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:35 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:36 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <img _ngcontent-tgm-c238="" src="assets/svgs/chat-icon-blue-circle.svg" data-test-id="imgStartChat" class="img shadow"> is not clickable at point (1494, 625). Other element would receive the click: <div _ngcontent-tgm-c15="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0be99d884a1f53d515bf02b48609a265, clickElement {id=f.B41A99B53F2C21E912493691247DC927.d.60C9BD499FDBC78DEFC23F5AAF28AE0A.e.4916}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62874/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0be99d884a1f53d515bf02b48609a265)] -> xpath: //img[@data-test-id='imgStartChat']]
+Session ID: 0be99d884a1f53d515bf02b48609a265</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:36 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:36 PM</td>
+					<td class='step-details'>Chat icon is clicked on Visit summary page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:36 PM</td>
+					<td class='step-details'>Chat box is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:36 PM</td>
+					<td class='step-details'>Chat box title with patient name and ID is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:04:37 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560077262.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560077262.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560077262.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:42 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:42 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:42 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:04:43 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1810_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:05:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:05:03 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:05:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+278ms</span>
+</div>
+	<div class='test-desc'>IDA4_1810_VisitSummary_Verify whether user able to chat and send to healthworker on visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:03 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:08 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:11 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:16 PM</td>
+					<td class='step-details'>Clicked on Chat icon from Visit summary page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:16 PM</td>
+					<td class='step-details'>Type Hi message from Chat text box</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:16 PM</td>
+					<td class='step-details'>Clicked on send button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:16 PM</td>
+					<td class='step-details'>Chat box title is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:16 PM</td>
+					<td class='step-details'>Sent message is displayed in Chat text dialog</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:05:16 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560116922.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560116922.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560116922.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:22 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:22 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:22 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:23 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1811_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:05:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:05:43 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:05:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+954ms</span>
+</div>
+	<div class='test-desc'>IDA4_1811_VisitSummary_Verify video call option in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:43 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:48 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:51 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:56 PM</td>
+					<td class='step-details'>Clicked on Video icon from Visit summary page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:56 PM</td>
+					<td class='step-details'>Video window is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:05:56 PM</td>
+					<td class='step-details'>Patient name is displayed in Video Window</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:05:56 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560156545.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560156545.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560156545.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:01 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:01 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:01 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:02 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1812_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:06:22 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:06:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+374ms</span>
+</div>
+	<div class='test-desc'>IDA4_1812_VisitSummary_Verify Current visit summary in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:22 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:27 PM</td>
+					<td class='step-details'>Clicked on Appointment link</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:30 PM</td>
+					<td class='step-details'>Clicked on first appointment patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:30 PM</td>
+					<td class='step-details'>Visit ID is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Visit created is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Visit Upload is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Visit Appointment on is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Visit Status is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Visit Location is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Visit Provided by is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Vital height is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Vital weight is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Vital BMI is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:31 PM</td>
+					<td class='step-details'>Vital BP is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Vital Pulse is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Vital Temp is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Vital SPO2 is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Vital Respiratory rate is displayed in Consultation details section</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Checkup reason is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Chief complaint is displayed in Checkup Reason field</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Physical exam is displayed in Checkup Reason field</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>General Exam is displayed in Checkup Reason field</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Medical history is displayed in Checkup Reason field</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Family history is displayed in Checkup Reason field</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Add Documents is displayed in Checkup Reason field</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:06:32 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560192970.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560192970.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560192970.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:37 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:38 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:38 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:38 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1814_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:06:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:06:58 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:07:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+303ms</span>
+</div>
+	<div class='test-desc'>IDA4_1814_VisitSummary_Verify the Update prescription and View prescription buttons before updating any changes in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:58 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:06:59 PM</td>
+					<td class='step-details'>Clicked on Awaiting vist 1st patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:03 PM</td>
+					<td class='step-details'>Clicked on Start Visit Note</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:06 PM</td>
+					<td class='step-details'>Share Prescription button is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:06 PM</td>
+					<td class='step-details'>Clicked on Share Prescription button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:06 PM</td>
+					<td class='step-details'>Submit button is displayed from Share Prescription popup</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:06 PM</td>
+					<td class='step-details'>Clicked on Submit button from Share Prescription popup</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:11 PM</td>
+					<td class='step-details'>Go to Dashboard button is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:12 PM</td>
+					<td class='step-details'>Close button is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:17 PM</td>
+					<td class='step-details'>Update Prescription button is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:17 PM</td>
+					<td class='step-details'>View Prescription button is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:07:17 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560237539.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560237539.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560237539.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:21 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:21 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:21 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:22 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1815_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:07:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:07:42 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:07:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+846ms</span>
+</div>
+	<div class='test-desc'>IDA4_1815_VisitSummary_Verify doing any changes in any of the section in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:42 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:42 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:46 PM</td>
+					<td class='step-details'>Clicked on Start Visit Note</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:47 PM</td>
+					<td class='step-details'>Type Medicine DOLO in Prescription drug textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:47 PM</td>
+					<td class='step-details'>Type Drug Strength as 500MG in drug strength textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:48 PM</td>
+					<td class='step-details'>Type 8 as No of days textbox</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:48 PM</td>
+					<td class='step-details'>Clicked on Drug time drop down</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:48 PM</td>
+					<td class='step-details'>Selected the value from Drug time dropdown</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:48 PM</td>
+					<td class='step-details'>Type in Drug Remarks</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:49 PM</td>
+					<td class='step-details'>Clicked on Add button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:54 PM</td>
+					<td class='step-details'>Clicked on Share Prescription button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:54 PM</td>
+					<td class='step-details'>Share prescription is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:07:54 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560274552.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560274552.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560274552.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:58 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:59 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:59 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:07:59 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1816_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:08:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:08:19 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:08:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+950ms</span>
+</div>
+	<div class='test-desc'>IDA4_1816_VisitSummary_Verify the functionality of share prescription button in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:19 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:20 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:24 PM</td>
+					<td class='step-details'>Clicked on Start Visit Note</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:28 PM</td>
+					<td class='step-details'>Clicked on Share Prescription button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:28 PM</td>
+					<td class='step-details'>Share prescription Confirmation text is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:28 PM</td>
+					<td class='step-details'>Clicked on Share prescription Submit button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:28 PM</td>
+					<td class='step-details'>Go to Dashboard button is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:28 PM</td>
+					<td class='step-details'>Caught exception: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3484421bb9c5d401ef127c6b2ecf70f1, isElementDisplayed {id=f.1409CD672A141B960E737C22EFA18F30.d.20D74907EAFE6ABE15BBA3282B1CC429.e.5487}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63115/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3484421bb9c5d401ef127c6b2ecf70f1)] -> xpath: //button[@data-test-id='btnClose']]
+Session ID: 3484421bb9c5d401ef127c6b2ecf70f1</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:28 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:30 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <button _ngcontent-wyc-c138="" data-test-id="btnClose" class="modal-close-btn">...</button> is not clickable at point (947, 208). Other element would receive the click: <div _ngcontent-wyc-c15="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3484421bb9c5d401ef127c6b2ecf70f1, clickElement {id=f.1409CD672A141B960E737C22EFA18F30.d.20D74907EAFE6ABE15BBA3282B1CC429.e.5514}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63115/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3484421bb9c5d401ef127c6b2ecf70f1)] -> xpath: //button[@data-test-id='btnClose']]
+Session ID: 3484421bb9c5d401ef127c6b2ecf70f1</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:30 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:30 PM</td>
+					<td class='step-details'>Clicked on Close button from popup</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:30 PM</td>
+					<td class='step-details'>Update prescription is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:08:31 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560311075.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560311075.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560311075.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:34 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:35 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:35 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:35 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1817_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:08:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:08:55 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:09:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+610ms</span>
+</div>
+	<div class='test-desc'>IDA4_1817_VisitSummary_Verify the functionality of view prescription button in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:55 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:08:56 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:00 PM</td>
+					<td class='step-details'>Clicked on Start Visit Note</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:04 PM</td>
+					<td class='step-details'>Clicked on Share Prescription button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:04 PM</td>
+					<td class='step-details'>Clicked on Share prescription Submit button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:08 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <button _ngcontent-rtg-c238="" type="button" data-test-id="btnViewPrescription" class="blue-btn mb-2 ng-star-inserted">...</button> is not clickable at point (1025, 650). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3ee26572159376b057e903195a9c757, clickElement {id=f.43916D91742C07F3B0B28CC6853C7CC2.d.C3AC1596F6409BC948054944AE4C8257.e.5201}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63151/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3ee26572159376b057e903195a9c757)] -> xpath: //button[@data-test-id='btnViewPrescription']]
+Session ID: e3ee26572159376b057e903195a9c757</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:08 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:10 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <button _ngcontent-rtg-c238="" type="button" data-test-id="btnViewPrescription" class="blue-btn mb-2 ng-star-inserted">...</button> is not clickable at point (1025, 650). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3ee26572159376b057e903195a9c757, clickElement {id=f.43916D91742C07F3B0B28CC6853C7CC2.d.C3AC1596F6409BC948054944AE4C8257.e.5201}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63151/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3ee26572159376b057e903195a9c757)] -> xpath: //button[@data-test-id='btnViewPrescription']]
+Session ID: e3ee26572159376b057e903195a9c757</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:10 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:11 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <button _ngcontent-rtg-c238="" type="button" data-test-id="btnViewPrescription" class="blue-btn mb-2 ng-star-inserted">...</button> is not clickable at point (1025, 650). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3ee26572159376b057e903195a9c757, clickElement {id=f.43916D91742C07F3B0B28CC6853C7CC2.d.C3AC1596F6409BC948054944AE4C8257.e.5201}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63151/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3ee26572159376b057e903195a9c757)] -> xpath: //button[@data-test-id='btnViewPrescription']]
+Session ID: e3ee26572159376b057e903195a9c757</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:11 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:12 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <button _ngcontent-rtg-c238="" type="button" data-test-id="btnViewPrescription" class="blue-btn mb-2 ng-star-inserted">...</button> is not clickable at point (1025, 650). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3ee26572159376b057e903195a9c757, clickElement {id=f.43916D91742C07F3B0B28CC6853C7CC2.d.C3AC1596F6409BC948054944AE4C8257.e.5201}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63151/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3ee26572159376b057e903195a9c757)] -> xpath: //button[@data-test-id='btnViewPrescription']]
+Session ID: e3ee26572159376b057e903195a9c757</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:12 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:13 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <button _ngcontent-rtg-c238="" type="button" data-test-id="btnViewPrescription" class="blue-btn mb-2 ng-star-inserted">...</button> is not clickable at point (1025, 650). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3ee26572159376b057e903195a9c757, clickElement {id=f.43916D91742C07F3B0B28CC6853C7CC2.d.C3AC1596F6409BC948054944AE4C8257.e.5201}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63151/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3ee26572159376b057e903195a9c757)] -> xpath: //button[@data-test-id='btnViewPrescription']]
+Session ID: e3ee26572159376b057e903195a9c757</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:13 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:13 PM</td>
+					<td class='step-details'>Clicked on View prescription</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:26 PM</td>
+					<td class='step-details'>View prescription popup is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:09:26 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560366720.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560366720.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560366720.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:31 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:31 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:31 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:32 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1818_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:09:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:09:52 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:10:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+315ms</span>
+</div>
+	<div class='test-desc'>IDA4_1818_VisitSummary_Verify the functionality of update prescription button in visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:52 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:52 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:09:56 PM</td>
+					<td class='step-details'>Clicked on Start Visit Note</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:00 PM</td>
+					<td class='step-details'>Clicked on Share Prescription button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:00 PM</td>
+					<td class='step-details'>Clicked on Share prescription Submit button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:04 PM</td>
+					<td class='step-details'>Clicked on close x button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:07 PM</td>
+					<td class='step-details'>Clicked on Update Prescription</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:10 PM</td>
+					<td class='step-details'>Share prescription Submit button is displayed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:10 PM</td>
+					<td class='step-details'>Share prescription Confirmation text on popup is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:10:10 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560410660.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560410660.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560410660.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:16 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:16 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:16 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:16 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1819_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:10:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:10:36 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:10:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+726ms</span>
+</div>
+	<div class='test-desc'>IDA4_1819_VisitSummary_Verify functionality of confirm button in share prescription popup </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:36 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:37 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:44 PM</td>
+					<td class='step-details'>Confirm button is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:10:44 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560444918.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560444918.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560444918.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:48 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:49 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:49 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:10:49 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1820_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:11:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:11:09 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:11:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+842ms</span>
+</div>
+	<div class='test-desc'>IDA4_1820_VisitSummary_Verify past visit history section on Visit summary page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:09 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:10 PM</td>
+					<td class='step-details'>Clickod on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:11 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <div role="tab" mattablabelwrapper="" mat-ripple="" cdkmonitorelementfocus="" class="mat-ripple mat-tab-label mat-focus-indicator ng-star-inserted" id="mat-tab-label-0-1" tabindex="-1" aria-posinset="2" aria-setsize="2" aria-controls="mat-tab-content-0-1" aria-selected="false" aria-disabled="false" data-test-id="mtPastVisit">...</div> is not clickable at point (639, 372). Other element would receive the click: <div _ngcontent-foq-c15="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64b18ae5340896f7e16e57965d2ac13e, clickElement {id=f.C3F592070DC1A5B62FAEE9D4F46D12B1.d.C55333C083FA0B646344BA315C9886BC.e.4379}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63273}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63273/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (64b18ae5340896f7e16e57965d2ac13e)] -> xpath: //div[@data-test-id='mtPastVisit']]
+Session ID: 64b18ae5340896f7e16e57965d2ac13e</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:11 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:11 PM</td>
+					<td class='step-details'>Clickod on Past Visit history Tab</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:11 PM</td>
+					<td class='step-details'>No Past Visit history text is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:11:11 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560471973.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560471973.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560471973.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:17 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:17 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:17 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:17 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1821_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:11:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:11:37 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:11:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+868ms</span>
+</div>
+	<div class='test-desc'>IDA4_1821_VisitSummary_Verify if there are past visits in the patient profile </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:37 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:38 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:39 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <div role="tab" mattablabelwrapper="" mat-ripple="" cdkmonitorelementfocus="" class="mat-ripple mat-tab-label mat-focus-indicator ng-star-inserted" id="mat-tab-label-0-1" tabindex="-1" aria-posinset="2" aria-setsize="2" aria-controls="mat-tab-content-0-1" aria-selected="false" aria-disabled="false" data-test-id="mtPastVisit">...</div> is not clickable at point (639, 372). Other element would receive the click: <div _ngcontent-pdg-c15="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb893a01369d90bbccf289b1ff479459, clickElement {id=f.37D9B70B0731391001F85ED00E84D1B8.d.AA4ED507DCFFB2D4534E5340754EDB39.e.4380}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63306/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb893a01369d90bbccf289b1ff479459)] -> xpath: //div[@data-test-id='mtPastVisit']]
+Session ID: bb893a01369d90bbccf289b1ff479459</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:39 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:39 PM</td>
+					<td class='step-details'>Clicked on Past Visit history</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:11:40 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560500025.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560500025.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560500025.png'></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:45 PM</td>
+					<td class='step-details'>username entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:45 PM</td>
+					<td class='step-details'>password entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:45 PM</td>
+					<td class='step-details'>click on login button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:11:45 PM</td>
+					<td class='step-details'>Logged into application successfully</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>IDA4_1823_VisitSummary</span>
+						<span class='test-time'>Oct 10, 2024 05:12:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 10, 2024 05:12:06 PM</span>
+	<span class='label end-time'>Oct 10, 2024 05:12:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+791ms</span>
+</div>
+	<div class='test-desc'>IDA4_1823_VisitSummary_Verify the details in past visit summary/prescription popup is correct </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>intelehealthWebAppRegressionTestSuite</span>
+				<span class='category label white-text'>VisitSummaryPageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:12:06 PM</td>
+					<td class='step-details'>Test started.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:12:06 PM</td>
+					<td class='step-details'>Clicked on Appointment Patient</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:12:07 PM</td>
+					<td class='step-details'>Caught exception: element click intercepted: Element <div role="tab" mattablabelwrapper="" mat-ripple="" cdkmonitorelementfocus="" class="mat-ripple mat-tab-label mat-focus-indicator ng-star-inserted" id="mat-tab-label-0-1" tabindex="-1" aria-posinset="2" aria-setsize="2" aria-controls="mat-tab-content-0-1" aria-selected="false" aria-disabled="false" data-test-id="mtPastVisit">...</div> is not clickable at point (639, 372). Other element would receive the click: <div _ngcontent-jpk-c15="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20111482fe2ef0c37f23ac4f76b13972, clickElement {id=f.BDF097F45AE2604F7492503E93AFCAD8.d.6ED3041286C26A3FF3704A8E6C29C414.e.4380}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Tennyson\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63339}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63339/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (20111482fe2ef0c37f23ac4f76b13972)] -> xpath: //div[@data-test-id='mtPastVisit']]
+Session ID: 20111482fe2ef0c37f23ac4f76b13972</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:12:07 PM</td>
+					<td class='step-details'>Retrying...</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:12:07 PM</td>
+					<td class='step-details'>Clicked on Past Visit history</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:12:08 PM</td>
+					<td class='step-details'>Test passed<img data-featherlight='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560528091.png' width='10%' src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560528091.png' data-src='D:\QA-Automation-Web-master\QA-Automation-Web-master/TestReports/screenshots/1728560528091.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>intelehealthWebAppRegressionTestSuite</span>
+						<span class='category-status right'>
+							<span class='label pass'>16</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 16</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 10, 2024 05:02:32 PM</td>
+										<td class='linked' test-id='1'>IDA4_1805_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:03:07 PM</td>
+										<td class='linked' test-id='2'>IDA4_1806_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:03:48 PM</td>
+										<td class='linked' test-id='3'>IDA4_1807_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:04:26 PM</td>
+										<td class='linked' test-id='4'>IDA4_1809_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:05:03 PM</td>
+										<td class='linked' test-id='5'>IDA4_1810_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:05:43 PM</td>
+										<td class='linked' test-id='6'>IDA4_1811_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:06:22 PM</td>
+										<td class='linked' test-id='7'>IDA4_1812_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:06:58 PM</td>
+										<td class='linked' test-id='8'>IDA4_1814_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:07:42 PM</td>
+										<td class='linked' test-id='9'>IDA4_1815_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:08:19 PM</td>
+										<td class='linked' test-id='10'>IDA4_1816_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:08:55 PM</td>
+										<td class='linked' test-id='11'>IDA4_1817_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:09:52 PM</td>
+										<td class='linked' test-id='12'>IDA4_1818_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:10:36 PM</td>
+										<td class='linked' test-id='13'>IDA4_1819_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:11:09 PM</td>
+										<td class='linked' test-id='14'>IDA4_1820_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:11:37 PM</td>
+										<td class='linked' test-id='15'>IDA4_1821_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:12:06 PM</td>
+										<td class='linked' test-id='16'>IDA4_1823_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>VisitSummaryPageTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>16</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 16</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 10, 2024 05:02:32 PM</td>
+										<td class='linked' test-id='1'>IDA4_1805_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:03:07 PM</td>
+										<td class='linked' test-id='2'>IDA4_1806_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:03:48 PM</td>
+										<td class='linked' test-id='3'>IDA4_1807_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:04:26 PM</td>
+										<td class='linked' test-id='4'>IDA4_1809_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:05:03 PM</td>
+										<td class='linked' test-id='5'>IDA4_1810_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:05:43 PM</td>
+										<td class='linked' test-id='6'>IDA4_1811_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:06:22 PM</td>
+										<td class='linked' test-id='7'>IDA4_1812_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:06:58 PM</td>
+										<td class='linked' test-id='8'>IDA4_1814_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:07:42 PM</td>
+										<td class='linked' test-id='9'>IDA4_1815_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:08:19 PM</td>
+										<td class='linked' test-id='10'>IDA4_1816_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:08:55 PM</td>
+										<td class='linked' test-id='11'>IDA4_1817_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:09:52 PM</td>
+										<td class='linked' test-id='12'>IDA4_1818_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:10:36 PM</td>
+										<td class='linked' test-id='13'>IDA4_1819_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:11:09 PM</td>
+										<td class='linked' test-id='14'>IDA4_1820_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:11:37 PM</td>
+										<td class='linked' test-id='15'>IDA4_1821_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 10, 2024 05:12:06 PM</td>
+										<td class='linked' test-id='16'>IDA4_1823_VisitSummary</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>16</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>223</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Oct 10, 2024 05:02:05 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Oct 10, 2024 05:12:08 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 10m 3s+205ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>intelehealthWebAppRegressionTestSuite</td>
+							<td>16</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>VisitSummaryPageTest</td>
+							<td>16</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 16,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 16,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 207,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>
